@@ -18,19 +18,19 @@
     <nav class="nav">
       <div class="nav__brandAndSocial">
         <div class="nav__brand-container">
-          <a href="#accueil" class="nav__brand-link" aria-label="visit homepage" aria-current="page">
+          <a href="#home" class="nav__brand-link" aria-label="visit homepage" aria-current="page">
             <img src="./images/photo_profil.webp" alt="Evetricia Kalala" aria-label="Evetricia Kalala" class="nav__brand-pic">
           </a>
         </div>
         <div class="nav__socialLinks">
-          <a href="#" class="nav__socialLinks-contact github" aria-label="contact page">
+          <a href="https://github.com/evy-vy" class="nav__socialLinks-contact github" aria-label="contact page">
             <i class="fa-brands fa-github"></i>
           </a>
           <a href="#" class="nav__socialLinks-contact mail" aria-label="contact page">
             <i class="fa-solid fa-at"></i>
           </a>
-          <a href="#" class="nav__socialLinks-contact linkedin" aria-label="contact page">
-            <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/evetricia-kalala" class="nav__socialLinks-contact linkedin" aria-label="contact page">
+            <i class="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
       </div>
@@ -41,22 +41,83 @@
           <span class="lines"></span>
           <span class="lines"></span>
         </button>
-
+        
         <div class="navLinks__container">
-          <a href="#accueil" aria-current="page" >Accueil</a>
-          <a href="#profil" >Profil</a>
-          <a href="#parcours" >Parcours</a>
+          <a href="#home" aria-current="page" >Accueil</a>
+          <a href="#profile" >Profil</a>
+          <a href="#studies" >Parcours</a>
           <a href="#portfolio" >Portefolio</a>
           <a href="#contact" >Contact</a>
         </div>
       </div>
-
     </nav>
-      <!-- fin-nav -->
-      <!-- main -->
-      <!-- fin main -->
-      <!-- footer -->
-      <!-- fin footer -->
+    <!-- fin-nav -->
+    <main>
+      <section id="home">
+          <h1 class="home__title">
+            Salut 👋🏿! <br><br>
+            Moi c'est Evetricia Kalala,<br>développeuse web junior<span class="home__subtitle"></span>
+          </h1>
+      </section>
+      <section id="profile">
+        <p class="profile__presentation">
+          Une femme dynamique, souriante et bonne communicante, qui a osé la grande aventure de la reconversion pour exercer le métier capable de satisfaire sa curiosité, sa soif d'apprendre et libérer sa créativité : Celui de web developper.<br><br>
+          Ce que j'aime, c'est coder des sites "from "scratch";<br> Les faire naitre et grandir.<br><br>
+          Rigoureuse et attachée à la qualité de mes développements, je mettrais un point d'honneur à vous donner entière satisfaction en développant la solution web répondant à vos besoins. 
+          N'hésitez pas à me confier vos plus beaux projets.<br><br>
+          <span class="italic">Au plaisir de travailler "avec vous".</span><br><br> 
+          <span class="name">Evetricia KALALA</span> 
+        </p>
+      </section>
+      <!-- section studies -->
+      <section id="studies" class="studies">
+        
+        <div class="studies__container">
+          <div class="studies__title-container">
+            <h2 class="studies__title">
+              Mon parcours
+              <br><small class="studies__subtitle">
+                Un profil un peu... atypique !
+              </small>
+            </h2>
+            <a class="container__action-btn" href="#">
+              <span class="action__btn">
+                Curriculum vitae
+              </span>
+              <span class="action__icon">
+                <i class="fa-solid fa-file-arrow-down"></i>
+              </span> 
+            </a>
+          </div>  
+          <p class="studies__paragraph">
+            C’est après 5 ans dans le prêt-à-porter que j’ai saisis l’opportunité de me reconvertir dans le développement web.
+          </p>
+          <div class="studies__img">
+            <img src="./images/pretApp.png" class="studies__img-clothing" alt="Vêtements sur portant">
+            <img src="./images/woman-in-overalls.webp" class="studies__img-seller" alt="femme vendeuse en prêt à porter"/>
+          </div>
+          <div class="studies__laptop">
+          <img src="./images/woman-with-laptop.webp" alt="femme tenant un pc portable dans ses mains" class="studies__laptop-womanLaptop">
+           <p class="studies__laptop-paragraph"> 
+              Accompagnée de toute ma conviction et de ma détermination, je candidate chez Openclassrooms afin d'acquérir les compétences indispensables à mon futur métier.<br><br> 
+              Après 8 mois de formation à distance, je suis fière d'avoir obtenu mon bac+2 de Développeur web. 
+            </p>
+            <div class="download__btn-container">
+              <button class="download" type="button">
+                <a class="download__btn" href="/file/Evetricia_Kalala_cv_2022.pdf" download>
+                  <i class="fa-solid fa-file-arrow-down"></i>
+                </a>
+              </button>
+            </div>         
+          </div>
+        </div>  
+      </section>
+      
+    </main>
+    <!-- fin main -->
+    <!-- footer -->
+    <!-- fin footer -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

@@ -1,0 +1,24 @@
+@mixin social_icons-color {
+  color: transparent;
+  font-weight: bold;
+  -webkit-background-clip: text;
+}
+
+@mixin blue__gradient {
+  background-image: linear-gradient(to top, #2765ac, #7287c0, #a6acd4, #d5d4e9, #ffffff);
+}
+
+@mixin green__gradient {
+  background-image: linear-gradient(to bottom, #87eed4, #abe9ef, #cdeefe, #edf5ff, #ffffff);
+
+}
+
+@mixin orange__gradient {
+  background-image: linear-gradient(to left, #f5b77c, #ffc0b1, #ffd3e0, #fdebfa, #ffffff);
+}
+
+@mixin mobile {
+  @media screen and (min-width: map-get($mobile-breakpoints, max-mobile)) {
+    @content;
+  }
+}

@@ -1,0 +1,30 @@
+main {
+  background: linear-gradient(to bottom, #181819, #101011, #050505);
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home__title {
+  margin: 40px 10px;
+  padding: 20px 20px 5px 20px;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  display: inline-block;
+  justify-content: center;
+  flex-direction: column;
+  color: #faf8f5;
+}
+
+.home__subtitle {
+  font-size: clamp(1.1rem, 5vw, 1.4rem);
+  display: flex;
+  margin-top: 10px;
+}
+
+.home__subtitle i {
+  font-size: clamp(0.9rem, 5vw, 1.3rem);
+}

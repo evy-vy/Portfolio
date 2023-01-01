@@ -1,3 +1,8 @@
-@import "base/base.scss";
-@import "./layout/container.scss";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/list_and_maps";
+@import "./base/base.scss";
 @import "./layout/nav.scss";
+@import "./layout/home.scss";
+@import "./layout/profile.scss";
+@import "./layout/parcours.scss";

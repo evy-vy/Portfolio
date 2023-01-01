@@ -26,14 +26,24 @@ h6 {
 }
 
 i {
-  font-size: clamp(1.1rem, 2vw, 1.1rem);
+  font-size: clamp(1.08rem, 2vw, 1.1rem);
 }
 
 html,
 body {
   max-width: 100%;
+}
+
+body {
+  height: 100vh;
   font-size: clamp(1rem, 2vw, 1.1rem);
   font-family: Inter, sans-serif;
+}
+
+main {
+  width: 100%;
+  position: absolute;
+  top: 136px;
 }
 
 h1,

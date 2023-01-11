@@ -25,9 +25,15 @@ h6 {
   padding: 0
 }
 
+i {
+  font-size: clamp(1.1rem, 2vw, 1.1rem);
+}
+
 html,
 body {
   max-width: 100%;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-family: Inter, sans-serif;
 }
 
 h1,
@@ -60,7 +66,6 @@ button {
 }
 
 html {
-  font-size: 10px;
   box-sizing: border-box;
 }
 
@@ -70,6 +75,16 @@ main {
 
 * {
   box-sizing: border-box;
+}
+
+// selection de tous les éléments se trouvant dans clean transition (soit tous les éléments dans body)
+.clean-transition * {
+  //ajout de tous les vendors pour être sûr que tous les nav support la clean transition
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
 }
 
 img,

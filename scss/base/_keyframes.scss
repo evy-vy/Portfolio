@@ -1,0 +1,27 @@
+@keyframes boxMagic {
+  from {
+    box-shadow:
+      0 0 0 #feac5e,
+      0 0 0 #c779d0,
+      0 0 0 #4bc0c8,
+      0 0 0 #42db75;
+  }
+
+  to {
+    box-shadow:
+      0 -3px 5px #feac5e,
+      -3px 0 0 #c779d0,
+      0 3px 5px #4bc0c8,
+      3px 0 0 #42db75;
+  }
+}
+
+// @keyframes spinning {
+//   from {
+//     transform: rotate(0deg);
+//   }
+
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }

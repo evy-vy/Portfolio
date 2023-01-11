@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- css -->
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&family=Outfit&family=Poppins&display=swap" rel="stylesheet">
-  <!-- title -->
-  <title>Bienvenue sur le portefolio d'Evetricia</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@700&family=Source+Sans+Pro&display=swap&family=Righteous&display=swap" rel="stylesheet">
+    <title>Bienvenue sur le portefolio d'Evetricia</title>
+  </head>
   <body class="clean-transition">
     <!-- nav -->
     <nav class="nav">
       <div class="nav__brandAndSocial">
         <div class="nav__brand-container">
-          <a href="#accueil" class="nav__brand-link" aria-label="visit homepage" aria-current="page">
-            <img src="./images/photo_profil.webp" alt="Evetricia Kalala" aria-label="Evetricia Kalala" class="nav__brand-pic">
+          <a href="#home" class="nav__brand-link" aria-label="visit homepage" aria-current="page">
+            <img src="./images/Initial_Logo-color-1000px.webp" alt="logo initial evetricia kalala" aria-label="logo" class="nav__brand-pic">
           </a>
         </div>
         <div class="nav__socialLinks">
-          <a href="#" class="nav__socialLinks-contact github" aria-label="contact page">
+          <a href="https://github.com/evy-vy" class="nav__socialLinks-contact github" aria-label="contact page">
             <i class="fa-brands fa-github"></i>
           </a>
           <a href="#" class="nav__socialLinks-contact mail" aria-label="contact page">
             <i class="fa-solid fa-at"></i>
           </a>
-          <a href="#" class="nav__socialLinks-contact linkedin" aria-label="contact page">
-            <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/evetricia-kalala" class="nav__socialLinks-contact linkedin" aria-label="contact page">
+            <i class="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
       </div>
@@ -41,22 +40,106 @@
           <span class="lines"></span>
           <span class="lines"></span>
         </button>
-
+        
         <div class="navLinks__container">
-          <a href="#accueil" aria-current="page" >Accueil</a>
-          <a href="#profil" >Profil</a>
-          <a href="#parcours" >Parcours</a>
+          <a href="#home" aria-current="page" >Accueil</a>
+          <a href="#studies" >Parcours</a>
+          <a href="#news" >Actu</a>
           <a href="#portfolio" >Portefolio</a>
           <a href="#contact" >Contact</a>
         </div>
       </div>
-
     </nav>
-      <!-- fin-nav -->
-      <!-- main -->
-      <!-- fin main -->
-      <!-- footer -->
-      <!-- fin footer -->
+    <!-- fin-nav -->
+    <main>
+      <section id="home">
+          <h1 class="home__title">
+            Salut 👋🏿! <br><br>
+            Moi c'est Evetricia Kalala,<br>développeuse web junior<span class="home__subtitle"></span>
+          </h1>
+          <p class="home__presentation">
+            Une femme dynamique, souriante et bonne communicante qui à le pouvoir de donner vie à vos projets.
+          </p>
+          <div class="call-to-action__container">
+            <div class="call-to-action__div"></div>
+            <a href="#portfolio" class="call-to-action__link home__link">Portefolio</a>
+          </div> 
+      </section>
+      <!-- section studies -->
+      <section id="studies" class="studies">
+        
+        <div class="studies__container">
+          <div class="studies__title-container">
+            <h2 class="studies__title">
+              De vendeuse...
+            </h2>
+          </div>  
+          <p class="studies__paragraph">
+            C’est après 5 ans dans le prêt-à-porter que j’ai saisis l’opportunité de me reconvertir dans le développement web.
+          </p>
+          <div class="studies__img-container">
+            <div class="studies__img">
+              <img src="./images/pretApp.png" class="studies__img-clothing" alt="Vêtements sur portant">
+              <img src="./images/woman-in-overalls.webp" class="studies__img-seller" alt="femme vendeuse en prêt à porter"/>
+            </div>
+          </div>
+          <div class="studies__title-container">
+            <h2 class="studies__title studies__laptop-title">
+              à développeuse !!
+            </h2>
+          </div>  
+          <div class="studies__laptop-container">
+            <div class="call-to-action__container">
+              <div class="call-to-action__div"></div>
+              <a href="https://github.com/evy-vy" class="call-to-action__link home__link" target="_blank">Github</a>
+            </div>
+            <div class="studies__laptop-imgText">
+              <img src="./images/woman-with-laptop.webp" alt="femme tenant un pc portable dans ses mains" class="studies__laptop-womanLaptop">
+               <p class="studies__laptop-paragraph"> 
+                  Accompagnée de toute ma conviction et de ma détermination, je candidate chez Openclassrooms afin d'acquérir les compétences indispensables à mon futur métier.<br><br> 
+                  Après 8 mois de formation intensive, je suis fière d'avoir obtenu mon bac+2 de Développeur web. 
+                </p>
+            </div>
+          </div>
+        </div>
+        <article id="news" class="news">
+          <div class="news__container">
+            <h3 class="news__title">
+              Et sinon, tu fais quoi en ce moment ??
+            </h3>
+            <div class="news__paragraph-container">
+              <p class="gradient">
+                Nouveau challenge:
+              <p>
+              <p class="news__paragraph">
+                <small><br>
+                  Je viens de commencer un bachelor de "Chef de projet marketing digital" 
+                </small> 🙌🏾.<br>
+                <small>Je reste tout de même ouverte à l'écoute de nouveaux challenges.</small>  
+              </p>
+              <div class="news__contact">
+                <p class="news__contact-paragraph">Contactez-moi !</p>
+                <div class="call-to-action__contact-container">
+                  <div class="call-to-action__contact-container">
+                    <a href="#form" class="call-to-action__link home__link nav__socialLinks-contact mail">
+                      <i class="fa-solid fa-at"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/evetricia-kalala" class="call-to-action__link home__link nav__socialLinks-contact linkedin">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      
+    </main>
+    <!-- fin main -->
+    <!-- footer -->
+    <!-- fin footer -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

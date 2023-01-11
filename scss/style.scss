@@ -1,3 +1,10 @@
-@import "base/base.scss";
-@import "./layout/container.scss";
-@import "./layout/nav.scss";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/list_and_maps";
+@import "./base/base";
+@import "./base/keyframes";
+@import "./components/call-to-action__btn";
+@import "./layout/nav";
+@import "./layout/home";
+@import "./layout/studies";
+@import "./layout/news";

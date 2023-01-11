@@ -1,0 +1,189 @@
+#studies {
+  background: #050810;
+  color: #faf8f5;
+}
+
+.studies {
+  &__container {
+    padding: 10px;
+  }
+
+  &__title {
+    @include h2;
+
+    @include desktop {
+      margin-left: 30px;
+    }
+
+    &-container {
+      margin-top: 20px;
+    }
+  }
+
+  &__paragraph {
+    width: 325px;
+    margin: 20px 10px;
+    padding: 10px 0;
+    line-height: 1.25;
+
+    @include tablette {
+      width: 385px;
+    }
+
+    @include desktop {
+      margin: 60px 5px 20px 50px
+    }
+  }
+
+  &__img-container {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include desktop {
+      width: 90%;
+      margin: 5px 0 5px 7em;
+
+    }
+  }
+
+  &__img {
+    position: relative;
+
+    @include mobile {
+      width: 90vw;
+    }
+
+    @include mobile-mid {
+      width: 80%;
+    }
+
+    @include mobile-max {
+      width: 70%;
+    }
+
+    @include tablette {
+      max-width: 60%;
+    }
+
+    @include desktop {
+      max-width: 55%;
+    }
+  }
+
+  &__img-seller {
+    height: 100%;
+    position: absolute;
+    right: -5px;
+    top: -22px;
+  }
+
+  &__laptop-title {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+
+    @include desktop {
+      margin-right: 30px;
+    }
+  }
+
+  &__laptop-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include tablette {
+      flex-direction: inherit;
+      justify-content: space-around;
+    }
+  }
+
+  &__laptop-imgText {
+    max-width: 500px;
+    align-self: center;
+
+    @include mobile {
+      max-width: 405px;
+    }
+
+    @include mobile-mid {
+      max-width: 422px;
+    }
+
+    @include mobile-max {
+      // flex-direction: row;
+      max-width: 425px;
+    }
+
+    @include tablette {
+      max-width: 600px;
+      margin: 45px 0;
+      width: 50%;
+    }
+
+    @include desktop {
+      max-width: 690px;
+      margin: 45px 0;
+    }
+
+    @include screen {
+      margin: 45px -10em 45px 0;
+    }
+  }
+
+  &__laptop-paragraph {
+    margin: 20px 0;
+    padding: 10px;
+
+    @include mobile-mid {
+      margin: 40px 0;
+    }
+
+    @include mobile-max {
+      margin: 50px 0;
+      padding: 2px;
+    }
+
+    @include tablette {
+      margin: 60px 0;
+    }
+  }
+
+  &__laptop-womanLaptop {
+    max-width: 28vw;
+    float: left;
+    shape-outside: url(/images/woman-with-laptop.webp);
+
+    @include mobile-mid {
+      max-width: 25vw;
+    }
+
+    @include mobile-max {
+      max-width: 20vw;
+    }
+
+    @include tablette {
+      max-width: 17vw;
+    }
+
+    @include desktop {
+      max-width: 15vw;
+    }
+
+    @include screen {
+      max-width: 12vw;
+    }
+  }
+}
+
+.call-to-action__container {
+  @include call-to-action__container;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 150px;
+}

@@ -1,4 +1,9 @@
 /*------------------ media queries breakpoints -------------*/
 
 /*media mobile */
-$mobile-breakpoints : (little-mobile-max: 500px, max-mobile: 900px);
+$mobile-breakpoints : (little-mobile-max: 500px);
+
+$mid-mobile-breakpoints : (mid-mobile-min: 501px, half-mobile: 610px, big-mobile: 611px, big-mobile-max: 849px);
+
+$tablette-breakpoints : (min-tablette: 850px);
+$desktop-breakpoints : (min-desktop: 1150px, max-desktop:1600px);

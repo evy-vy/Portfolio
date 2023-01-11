@@ -25,7 +25,7 @@ hamburgerToggler.addEventListener("click", toggleNav);
 
 //gestion de l'apparition de la navbar au resize mobile - tablette/destop
 new ResizeObserver(entries => {
-  if (entries[0].contentRect.width <= 900) {
+  if (entries[0].contentRect.width <= 850) {
     navLinksContainer.style.transition = "transform 0.3s ease-out";
   } else {
     navLinksContainer.style.transition = "none";

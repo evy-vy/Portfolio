@@ -1,8 +1,5 @@
-main {
-  background: linear-gradient(to bottom, #181819, #101011, #050505);
-}
-
 #home {
+  background: #10101a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,7 +7,7 @@ main {
 }
 
 .home__title {
-  margin: 40px 10px;
+  margin: 20px 10px;
   padding: 20px 20px 5px 20px;
   font-size: clamp(1.5rem, 5vw, 2.5rem);
   display: inline-block;
@@ -25,6 +22,29 @@ main {
   margin-top: 10px;
 }
 
+.colored {
+  @include gradient-animation;
+}
+
 .home__subtitle i {
   font-size: clamp(0.9rem, 5vw, 1.3rem);
+}
+
+.home__presentation {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  color: #faf8f5;
+  width: 355px;
+  margin: 5px 20px 30px 20px;
+  padding: 10px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+
+  @include tablette {
+    width: 400px;
+  }
+
+  @include desktop {
+    width: 440px;
+  }
 }

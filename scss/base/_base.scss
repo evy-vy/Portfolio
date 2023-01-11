@@ -22,7 +22,9 @@ h4,
 h5,
 h6 {
   margin: 0;
-  padding: 0
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  color: #faf8f5;
 }
 
 i {
@@ -32,12 +34,12 @@ i {
 html,
 body {
   max-width: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   height: 100vh;
   font-size: clamp(1rem, 2vw, 1.1rem);
-  font-family: Inter, sans-serif;
 }
 
 main {
@@ -53,7 +55,11 @@ h4,
 h5,
 h6 {
   font-size: 100%;
-  font-weight: normal
+  font-weight: normal;
+}
+
+h2 {
+  font-size: clamp(1.1rem, 2vw, 1.2rem);
 }
 
 ul {
@@ -62,7 +68,11 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit;
+  font-family: "Source Sans pro", sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
 }
 
 button,

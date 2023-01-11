@@ -17,8 +17,102 @@
   background-image: linear-gradient(to left, #f5b77c, #ffc0b1, #ffd3e0, #fdebfa, #ffffff);
 }
 
+
+@mixin call-to-action__container {
+  position: relative;
+  cursor: pointer;
+  margin: 5px 10px 30px 10px;
+  padding: 10px;
+  transition: transform 0.4s cubic-bezier(0.23, 1.83, 0.42, 1.19);
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+
+  .call-to-action__div {
+    width: 100px;
+    height: 100px;
+    border: 1px #f1f1f1 solid;
+    border-radius: 50%;
+    animation: 1s linear infinite alternate boxMagic;
+  }
+}
+
+@mixin call-to-action__contact-container {
+  position: inherit;
+  display: flex;
+  justify-content: center;
+
+  &>a {
+    margin: -10px 5px;
+    padding: 5px;
+    position: inherit;
+  }
+}
+
+@mixin call-to-action__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  font-family: "Righteous", sans-serif;
+  margin: 0 2.5px 0 2.5px;
+  color: #faf8f5;
+}
+
+@mixin h2 {
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  background-image: linear-gradient(90deg, #b0f3f1, #bd76ae);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px 4px;
+  padding: 10px;
+}
+
+@mixin gradient-animation {
+  background-image: linear-gradient(135deg, #6bc5f8, #cf59e6, #E7B9D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
 @mixin mobile {
-  @media screen and (min-width: map-get($mobile-breakpoints, max-mobile)) {
+  @media screen and (max-width: map-get($mobile-breakpoints, little-mobile-max)) {
+    @content;
+  }
+}
+
+@mixin mobile-mid {
+  @media screen and (min-width: map-get($mid-mobile-breakpoints, mid-mobile-min)) and (max-width: map-get($mid-mobile-breakpoints, half-mobile)) {
+    @content;
+  }
+}
+
+@mixin mobile-max {
+  @media screen and (min-width: map-get($mid-mobile-breakpoints, big-mobile)) and (max-width: map-get($mid-mobile-breakpoints, big-mobile-max)) {
+    @content;
+  }
+}
+
+@mixin tablette {
+  @media screen and (min-width: map-get($tablette-breakpoints, min-tablette)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: map-get($desktop-breakpoints, min-desktop)) {
+    @content;
+  }
+}
+
+@mixin screen {
+  @media screen and (min-width: map-get($desktop-breakpoints, max-desktop)) {
     @content;
   }
 }

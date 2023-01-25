@@ -1,0 +1,27 @@
+.footer {
+  background: #050810;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__brand {
+    width: 100px;
+  }
+
+  &__social {
+    width: 100%;
+  }
+}
+
+.footer__socialLinks {
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: -35px;
+  width: 100%;
+
+  &>a {
+    position: inherit;
+  }
+}

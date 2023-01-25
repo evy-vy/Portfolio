@@ -1,0 +1,21 @@
+.portfolio {
+  @include card;
+  background: #10101a;
+  padding-top: 5px;
+
+  &__title {
+    @include h2;
+    margin: 10px 10px 30px 15px;
+  }
+
+  &__card-link {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+    padding: 5px 0;
+  }
+}
+
+.github-size {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+}

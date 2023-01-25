@@ -1,6 +1,7 @@
 #studies {
   background: #050810;
   color: #faf8f5;
+  padding-bottom: 30px;
 }
 
 .studies {
@@ -115,7 +116,6 @@
     }
 
     @include mobile-max {
-      // flex-direction: row;
       max-width: 425px;
     }
 
@@ -156,6 +156,7 @@
   &__laptop-womanLaptop {
     max-width: 28vw;
     float: left;
+    -webkit-shape-outside: url(/images/woman-with-laptop.webp);
     shape-outside: url(/images/woman-with-laptop.webp);
 
     @include mobile-mid {

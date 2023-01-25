@@ -10,46 +10,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@700&family=Source+Sans+Pro&display=swap&family=Righteous&display=swap" rel="stylesheet">
-    <title>Bienvenue sur le portefolio d'Evetricia</title>
+    <title>Evetricia Kalala</title>
   </head>
   <body class="clean-transition">
     <!-- nav -->
-    <nav class="nav">
-      <div class="nav__brandAndSocial">
-        <div class="nav__brand-container">
-          <a href="#home" class="nav__brand-link" aria-label="visit homepage" aria-current="page">
-            <img src="./images/Initial_Logo-color-1000px.webp" alt="logo initial evetricia kalala" aria-label="logo" class="nav__brand-pic">
-          </a>
-        </div>
-        <div class="nav__socialLinks">
-          <a href="https://github.com/evy-vy" class="nav__socialLinks-contact github" aria-label="contact page">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="#" class="nav__socialLinks-contact mail" aria-label="contact page">
-            <i class="fa-solid fa-at"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/evetricia-kalala" class="nav__socialLinks-contact linkedin" aria-label="contact page">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </div>
+      <div class="btn__top">
+        <span class="container__arrow-top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </span>
       </div>
+    <!-- <header class="header"> -->
+      <nav class="nav">
+        <div class="nav__brandAndSocial">
+          <div class="nav__brand-container">
+            <a href="#home" class="nav__brand-link" aria-label="visit homepage" aria-current="page">
+              <img src="./images/Initial_Logo-color-1000px.webp" alt="logo initiales evetricia kalala" aria-label="logo" class="nav__brand-pic">
+            </a>
+          </div>
+          <div class="nav__socialLinks">
+            <a href="https://github.com/evy-vy" class="nav__socialLinks-contact github" aria-label="contact page">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="nav__socialLinks-contact mail" aria-label="contact page">
+              <i class="fa-solid fa-at"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/evetricia-kalala" class="nav__socialLinks-contact linkedin" aria-label="contact page">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
 
-      <div class="main__navLinks">
-        <button class="hamburger" type="button" aria-label="toggle navigation" aria-expanded="false">
-          <span class="lines"></span>
-          <span class="lines"></span>
-          <span class="lines"></span>
-        </button>
-        
-        <div class="navLinks__container">
-          <a href="#home" aria-current="page" >Accueil</a>
-          <a href="#studies" >Parcours</a>
-          <a href="#news" >Actu</a>
-          <a href="#portfolio" >Portefolio</a>
-          <a href="#contact" >Contact</a>
+        <div class="main__navLinks">
+          <button class="hamburger" type="button" aria-label="toggle navigation" aria-expanded="false">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+          </button>
+          
+          <div class="navLinks__container">
+            <a href="#home" aria-current="page" >Accueil</a>
+            <a href="#studies" >Parcours</a>
+            <a href="#news" >Actu</a>
+            <a href="#portfolio" >Portefolio</a>
+            <a href="#contact" >Contact</a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    <!-- </header> -->
     <!-- fin-nav -->
     <main>
       <section id="home">
@@ -67,7 +74,6 @@
       </section>
       <!-- section studies -->
       <section id="studies" class="studies">
-        
         <div class="studies__container">
           <div class="studies__title-container">
             <h2 class="studies__title">
@@ -77,10 +83,12 @@
           <p class="studies__paragraph">
             C’est après 5 ans dans le prêt-à-porter que j’ai saisis l’opportunité de me reconvertir dans le développement web.
           </p>
-          <div class="studies__img-container">
-            <div class="studies__img">
-              <img src="./images/pretApp.png" class="studies__img-clothing" alt="Vêtements sur portant">
-              <img src="./images/woman-in-overalls.webp" class="studies__img-seller" alt="femme vendeuse en prêt à porter"/>
+          <div class="studies__container">
+            <div class="studies__img-container">
+              <div class="studies__img">
+                <img src="./images/pretApp.png" class="studies__img-clothing" alt="Vêtements sur portant">
+                <img src="./images/woman-in-overalls.webp" class="studies__img-seller" alt="femme vendeuse en prêt à porter"/>
+              </div>
             </div>
           </div>
           <div class="studies__title-container">
@@ -114,8 +122,8 @@
               <p class="news__paragraph">
                 <small><br>
                   Je viens de commencer un bachelor de "Chef de projet marketing digital" 
-                </small> 🙌🏾.<br>
-                <small>Je reste tout de même ouverte à l'écoute de nouveaux challenges.</small>  
+                </small> 🙌🏾<br>
+                <small>Je reste tout de même à l'écoute de nouveaux challenges.</small>  
               </p>
               <div class="news__contact">
                 <p class="news__contact-paragraph">Contactez-moi !</p>
@@ -134,10 +142,87 @@
           </div>
         </article>
       </section>
-      
+      <section id="portfolio" class="portfolio">
+        <h2 class="portfolio__title">
+          Work Work Work ...
+        </h2>
+        <div class="portfolio__card-container">
+          <div class="portfolio__card">
+            <div class="portfolio__card-image-container">
+              <img src="./images/woman-in-overalls.webp" alt="" class="portfolio__card-image">
+            </div>
+            <div class="portfolio__card-heading-container">
+              <h2 class="portfolio__card-heading">
+                Lorem, ipsum dolor.
+              </h2>
+              <div class="call-to-action__contact-container portfolio__card-link">
+                <a href="https://github.com/evy-vy" class="nav__socialLinks-contact github" aria-label="contact page">
+                  <i class="fa-brands fa-github github-size"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <h2 class="contact__title">Say Helloooo !!</h2>
+        <div class="contact__container">
+          <div class="contact__img-container">
+            <img class="contact__img" src="./images/mail.webp" alt="une enveloppe">
+          </div>
+          <form method="POST" action="" class="form" id="form">
+            <div class="form__container">
+              <label for="name">Nom : </label>
+              <input class="form-control input__form" type="text" id="name" name="name" placeholder="Votre nom" maxlength="20" required>
+              <small id="passwordWarning"></small>
+            </div>
+            <div class="form__container">
+              <label for="username">Prenom : </label>
+              <input class="form-control input__form" type="text" id="username" prenom="username" placeholder="Votre prenom" maxlength="20" required>
+              <small id="passwordWarning"></small>
+            </div>
+            <div class="form__container">
+              <label for="username">Prenom : </label>
+              <input class="form-control input__form" type="text" id="username" name="username" placeholder="Votre prenom" minlenght="2" maxlength="20" required>
+              <small id="passwordWarning"></small>
+            </div>
+            <div class="form__container">
+              <label for="object">Objet : </label>
+              <input class="form-control input__form" type="text" id="object" name="objet" minlenght="2" maxlength="10" required>
+              <small id="passwordWarning"></small>
+            </div>
+            <div class="form__container">
+              <label for="content">Message : </label>
+              <textarea class="form-control input__form" type="text" id="content" name="content" placeholde="Message" row="10" cols="30" required ></textarea>
+              <small id="passwordWarning"></small>
+            </div>
+            <button id="send" class="check-btn" type="submit" value="envoyer">Envoyer
+            </button>
+          <span id="form__error"></span>
+          </form>
+        </div>
+      </section>
     </main>
     <!-- fin main -->
     <!-- footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <img class="footer__brand" src="./images/Initial_Logo-color.webp" alt="logo Evetricia Kalala">
+        <div class="nav__brandAndSocial footer__social">
+          <div class="nav__socialLinks footer__socialLinks">
+            <a href="https://github.com/evy-vy" class="nav__socialLinks-contact github" aria-label="contact page">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="nav__socialLinks-contact mail" aria-label="contact page">
+              <i class="fa-solid fa-at"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/evetricia-kalala" class="nav__socialLinks-contact linkedin" aria-label="contact page">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- fin footer -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="./app.js"></script>

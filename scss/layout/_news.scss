@@ -15,6 +15,10 @@
     @include mobile-mid {
       width: 75vw;
     }
+
+    @include tablette {
+      width: 60vw;
+    }
   }
 
   &__title {

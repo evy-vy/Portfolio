@@ -81,6 +81,61 @@
   animation: gradient 5s ease infinite;
 }
 
+@mixin card {
+  .portfolio {
+    &__card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__card {
+      display: flex;
+      padding-top: 20px;
+      margin-bottom: 40px;
+      flex-direction: column;
+      align-items: center;
+      width: 280px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, rgba(35, 37, 49, .5), rgba(15, 15, 24, .5));
+      border: 0.2rem solid #20222e;
+      -webkit-backdrop-filter: blur(54px);
+      backdrop-filter: blur(54px);
+    }
+
+    &__card-image-container {
+      width: 70%;
+      height: 50vh;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      border: 1px solid #20222e;
+      border-radius: 10px;
+    }
+
+    &__card-image {
+      object-fit: cover;
+    }
+
+    &__card-heading-container {
+      width: 100%;
+      display: flex;
+      flex-direction: flex-start;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+      padding: 5px;
+    }
+
+    &__card-heading {
+      margin: 2px 2px 2px 10px;
+    }
+
+    // &__card-link {
+    // }
+  }
+}
+
 @mixin mobile {
   @media screen and (max-width: map-get($mobile-breakpoints, little-mobile-max)) {
     @content;

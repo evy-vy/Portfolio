@@ -27,7 +27,7 @@
   }
 
   &__form-container {
-    min-width: 60vh;
+    width: 60vh;
 
     @include mobile-mid {
       width: 70vh;

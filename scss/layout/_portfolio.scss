@@ -19,3 +19,16 @@
 .github-size {
   font-size: clamp(1.4rem, 2vw, 1.8rem);
 }
+
+#form {
+  backdrop-filter: blur(5px);
+  width: 238px;
+  border: solid 2px;
+  padding: 10px;
+  display: block;
+}
+
+input,
+textarea {
+  background: rgba($color: #fff, $alpha: .1);
+}

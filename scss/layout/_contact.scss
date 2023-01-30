@@ -1,33 +1,89 @@
 #contact {
-  background: #10101a;
+  background: #050810;
   width: 100%;
+  padding-top: 10px;
 }
 
 .contact {
   width: 100%;
 
+  &__title {
+    @include h2;
+    background-image: linear-gradient(185deg, #b0f3f1, #bd76ae);
+    margin: 10px 10px 30px 15px;
+  }
+
   &__container {
     display: flex;
-    padding: 30px 10px;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    padding-bottom: 10px;
   }
 
   &__img-container {
     display: flex;
-    justify-content: center;
+    object-fit: cover;
+    position: relative;
+    display: none;
   }
 
-  &__img {
-    width: 250px;
+  &__form-container {
+    min-width: 60vh;
+
+    @include mobile-mid {
+      width: 70vh;
+    }
+
+    @include mobile-max {
+      width: 70vh;
+    }
+
+    @include tablette {
+      width: 80vh;
+    }
   }
 }
 
-#form {
-  position: absolute;
+.form {
+  margin-bottom: 20px;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin: 10px 5px 20px 5px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+input {
+  @include tablette {
+    width: 50vh;
+  }
+}
+
+textarea {
+  max-width: 100%;
+  padding: 10px;
+  height: 200px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 
 #send {
-  position: absolute;
+  padding: 8px;
+  width: 85px;
+  border-radius: 15px;
+  background: #f4427d;
+  color: #fff;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+
+  @include tablette {
+    width: 90px;
+  }
 }

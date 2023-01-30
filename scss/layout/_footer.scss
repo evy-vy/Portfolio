@@ -1,5 +1,5 @@
 .footer {
-  background: #050810;
+  background: #10101a;
 
   &__container {
     display: flex;
@@ -17,11 +17,12 @@
 
 .footer__socialLinks {
   flex-direction: row;
-  justify-content: space-evenly;
   margin-left: -35px;
   width: 100%;
 
   &>a {
     position: inherit;
+    padding: 5px;
+    margin: 5px;
   }
 }

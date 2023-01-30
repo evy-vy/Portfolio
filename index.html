@@ -168,38 +168,36 @@
         <h2 class="contact__title">Say Helloooo !!</h2>
         <div class="contact__container">
           <div class="contact__img-container">
-            <img class="contact__img" src="./images/mail.webp" alt="une enveloppe">
+            <img class="contact__img" src="./images/communication.png" alt="une enveloppe">
           </div>
-          <form method="POST" action="" class="form" id="form">
-            <div class="form__container">
-              <label for="name">Nom : </label>
-              <input class="form-control input__form" type="text" id="name" name="name" placeholder="Votre nom" maxlength="20" required>
-              <small id="passwordWarning"></small>
-            </div>
-            <div class="form__container">
-              <label for="username">Prenom : </label>
-              <input class="form-control input__form" type="text" id="username" prenom="username" placeholder="Votre prenom" maxlength="20" required>
-              <small id="passwordWarning"></small>
-            </div>
-            <div class="form__container">
-              <label for="username">Prenom : </label>
-              <input class="form-control input__form" type="text" id="username" name="username" placeholder="Votre prenom" minlenght="2" maxlength="20" required>
-              <small id="passwordWarning"></small>
-            </div>
-            <div class="form__container">
-              <label for="object">Objet : </label>
-              <input class="form-control input__form" type="text" id="object" name="objet" minlenght="2" maxlength="10" required>
-              <small id="passwordWarning"></small>
-            </div>
-            <div class="form__container">
-              <label for="content">Message : </label>
-              <textarea class="form-control input__form" type="text" id="content" name="content" placeholde="Message" row="10" cols="30" required ></textarea>
-              <small id="passwordWarning"></small>
-            </div>
-            <button id="send" class="check-btn" type="submit" value="envoyer">Envoyer
-            </button>
-          <span id="form__error"></span>
-          </form>
+          <div class="contact__form-container">
+            <form method="POST" action="" class="form">
+              <div class="form__container">
+                <label for="name">Nom : </label>
+                <input class="form-control input__form" type="text" id="name" name="name" placeholder="Votre nom" maxlength="20" required>
+                <small id="passwordWarning"></small>
+              </div>
+              <div class="form__container">
+                <label for="username">Prénom : </label>
+                <input class="form-control input__form" type="text" id="username" name="username" placeholder="Votre prenom" minlenght="2" maxlength="20" required>
+                <small id="passwordWarning"></small>
+              </div>
+              <div class="form__container">
+                <label for="object">Objet : </label>
+                <input class="form-control input__form" type="text" id="object" name="objet" 
+                placeholder="Objet" minlenght="2" maxlength="10" required>
+                <small id="passwordWarning"></small>
+              </div>
+              <div class="form__container">
+                <label for="content">Message : </label>
+                <textarea class="form-control input__form" type="text" id="content" name="content" placeholder="Votre message..." row="12" cols="35" required ></textarea>
+                <small id="passwordWarning"></small>
+              </div>
+              <button id="send" class="check-btn" type="submit" value="envoyer">Envoyer
+              </button>
+            <span id="form__error"></span>
+            </form>
+          </div>
         </div>
       </section>
     </main>
